@@ -244,7 +244,7 @@ doc/*.txt # 会忽略doc/noteds.txt但不包括doc/server/arch.txt
 
     ```bash
     # 进入 C:\Users\23032\.ssh 目录
-    # 生成公钥
+    # 生成公钥  在git中生成
     ssh-keygen -t rsa
     ```
 
