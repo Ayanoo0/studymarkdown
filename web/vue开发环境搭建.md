@@ -31,7 +31,8 @@ npm是随同NodeJS一起安装的包管理工具，能解决Node.JS代码部署�
 
 #### 1.4.1. Vue Cli介绍
 
-Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统。 使用Vue 脚手架之后我们开发的页面将是一个完整系统(项目)。
+- Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统。 使用Vue 脚手架之后我们开发的页面将是一个完整系统(项目)。
+- vue/cli内嵌了webpack和webpack-dev-server对vue进行打包，所以vue/vli也只是在开发时依赖，搞清楚在哪里配置webpack规则即可。
 
 #### 1.4.2. Vue Cli的优势
 
