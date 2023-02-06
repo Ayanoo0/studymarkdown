@@ -123,7 +123,7 @@ git config --global user.email liuzh@bhz.com.cn #邮箱
 
 ## 4. Git基本理论(核心)
 
->工作区域
+>工作区域啊
 
 Git本地有三个工作区域:工作目录(Working Directory)、暂存区(Stage/Index)、资源库(Repository或Git Directory),还有远程的git仓库(Remote Directory)。文件再在四个区域之间的转换关系如下:
 
