@@ -325,8 +325,8 @@ master 主分支应该非常稳定，用来发布新版本，一般情况下不�
 ## 10. git 同步至多个仓库
 
 ```sh
-# 新增上传url
-git remote set-url --add origin #newUrl#
+# 新增上传url  先设置ssh
+git remote set-url --add origin #newUrl#  
 # 完成url新增后上传至所有
 git push --all
 ```
