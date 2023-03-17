@@ -37,6 +37,10 @@ compose up -d
 ```sh
 # 进入公钥存放路径
 cd .ssh
-# 将公钥放入服务器访客ssh公钥路径
-scp id_rsa.pub root@10.1.14.14:/root/.ssh/authorized_keys
+# 使用vi编辑器 将公钥放入服务器访客ssh公钥路径
+vi authorized_keys 
+ese #进入编辑模式
+#鼠标右键复制密钥
+#进入编辑模式后保存并推出vi
+:wq 
 ```
