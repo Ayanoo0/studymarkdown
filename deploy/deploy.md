@@ -39,9 +39,14 @@ sh update.sh #./update.sh也一样
 # 8.修改对package.sh的操作权限执行package.sh打包代码
 cd /data/appBins/decp/testtsm-web
 chmod a+x package.sh
-.package.sh
+.package.sh   #后台包括jar+config
 # 9.服务器起服务
 compose up -d
+comppose restart xx工程名称
+# 10.看日志
+compose logs -f --tail 100 xxxx工程名称
+
+
 ```
 
 ## 3. 将ssh公钥放入服务器

@@ -24,7 +24,7 @@
 
 ### jpa与mysql、Oracle的关系
 
-变量类型自动匹配数据库的字段类型
+变量类型自动匹配数据库的字段类型 @Query jdbc template  数据库操作？
 
 ## 部署问题
 
