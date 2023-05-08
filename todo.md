@@ -33,3 +33,17 @@
 - nginx中配置了什么
 - compose.yml用于创建容器到底指明了什么
 - 在前端和后端部署上的区别
+
+## 服务器环境处理
+
+### 服务器操作系统安装
+
+#### Red Hat Enterprice Linux
+
+- [安装官方指南](https://access.redhat.com/documentation/zh-cn/red_hat_enterprise_linux/6/html/installation_guide/index)
+
+#### 系统相关操作
+
+> [公司服务器前端页面访问url](https://10.1.14.10:9090/machines)
+
+##### 虚拟机创建
