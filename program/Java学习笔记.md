@@ -2,7 +2,7 @@
 
 ## 工作中存在的知识点学习
 
-### list,set,map
+### 常用集合类list,set,map
 
 #### list
 
