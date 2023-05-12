@@ -1,19 +1,26 @@
-# Java学习笔记
+# Java 学习笔记
 
 ## 工作中存在的知识点学习
 
-### 常用集合类list,set,map
+### 常用集合类 list,set,map
 
 #### list
 
 > 元素有序放入，可重复
 
-List主要有ArrayList、LinkedList与Vector
+List 主要有 ArrayList、LinkedList 与 Vector
 
-- **ArrayList**:是一个可改变大小的数组.当更多的元素加入到ArrayList中时,其大小将会动态地增长.内部的元素可以直接通过get与set方法进行访问.
-- **LinkedList**：在添加和删除元素时具有比ArrayList更好的性能.但在get与set方面弱于ArrayList
-- **Vector**：Vector 和ArrayList类似,但属于强同步类。如果你的程序本身是线程安全的(thread-safe,没有在多个线程之间共享同一个集合/对象),那么使用ArrayList是更好的选择
+- **ArrayList**:是一个可改变大小的数组.当更多的元素加入到 ArrayList 中时,其大小将会动态地增长.内部的元素可以直接通过 get 与 set 方法进行访问.
+- **LinkedList**：在添加和删除元素时具有比 ArrayList 更好的性能.但在 get 与 set 方面弱于 ArrayList
+- **Vector**：Vector 和 ArrayList 类似,但属于强同步类。如果你的程序本身是线程安全的(thread-safe,没有在多个线程之间共享同一个集合/对象),那么使用 ArrayList 是更好的选择
 
 #### set
 
 > 元素无放入顺序，元素不可重复
+
+### 依赖处理
+
+> 目前公司依赖下载方式为通过服务器拉取公共依赖库，或者使用本地依赖
+
+1. 本地依赖需要基于连接到公司内网
+2. 根据错误报文判断无法下载的依赖来源，根据在 pom 中的依赖配置，去[mvn 公共仓库官网](https://mvnrepository.com/)
