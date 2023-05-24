@@ -38,4 +38,8 @@ create table if not exists a
 INSERT INTO interface2.c (name,dcep_app_status) VALUES ('未下载未个人化未开立','1110'),('已下载未个人化未开立','1210'),('已下载已个人化未开立','1220'),('已下载已个人化已开立','1220');
 //修改表头
 alter table interface2.c change  safe_app_status dcep_app_status varchar(64);
+//添加主键
+alter table c add primary key(dcep_app_status)；
+//删除主键
+ alter table 表名 drop primary key;
 ```
