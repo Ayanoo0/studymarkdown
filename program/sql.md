@@ -26,7 +26,7 @@ select a.*,b.* from ams_role a join code_certype b on 1=1;
 select a.*,b.*,c.* from  a join  b join c on 1=1=1 ;
 ```
 
-#### 表格创建
+#### 常用其他语句
 
 ```sql
 //新增表格
@@ -42,4 +42,8 @@ alter table interface2.c change  safe_app_status dcep_app_status varchar(64);
 alter table c add primary key(dcep_app_status)；
 //删除主键
  alter table 表名 drop primary key;
+ //从b中查找pro_status的作为a的code，b的查找字段是a的一部分
+ update process a set code=(select b.pro_status from process_checkplan_open b where a.name=concat("executing_node" ,b.id )) where a.name like 'executing_node%';
+ //concat进行字符串拼接
+ select concat(temp1.id ,"_"  ,temp2.id  ,"_" ,temp3.id)  from temp1,temp2,temp3;
 ```
