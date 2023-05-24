@@ -46,4 +46,6 @@ alter table c add primary key(dcep_app_status)；
  update process a set code=(select b.pro_status from process_checkplan_open b where a.name=concat("executing_node" ,b.id )) where a.name like 'executing_node%';
  //concat进行字符串拼接
  select concat(temp1.id ,"_"  ,temp2.id  ,"_" ,temp3.id)  from temp1,temp2,temp3;
+ //使用某个数据库
+ use interface
 ```
