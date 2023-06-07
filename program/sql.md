@@ -26,14 +26,13 @@ select a.*,b.* from ams_role a join code_certype b on 1=1;
 select a.*,b.*,c.* from  a join  b join c on 1=1=1 ;
 ```
 
-#### 常用其他语句
+#### 常用其他语句 for mysql
 
 ```sql
 //新增表格
-create table if not exists a
-(name varchar(64)
-    wallet_status varchar(64)
-)
+create table if not exists process_checkplan_delete
+(id varchar(64) primary key,
+wallet_status varchar(64),safe_app_status varchar(64),dcep_app_status varchar(64),pro_status varchar(64),executing_node varchar(255));
 //添加列
 INSERT INTO interface2.c (name,dcep_app_status) VALUES ('未下载未个人化未开立','1110'),('已下载未个人化未开立','1210'),('已下载已个人化未开立','1220'),('已下载已个人化已开立','1220');
 //修改表头
