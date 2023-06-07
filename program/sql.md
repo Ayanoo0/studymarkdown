@@ -25,8 +25,8 @@ select a.*,b.* from ams_role a join code_certype b on 1=1;
 
 select a.*,b.*,c.* from  a join  b join c on 1=1=1 ;
 
-//用于需要关联字段的联表查询
-select a.* from 设备最新定位信息表 a join 设备信息表 b on a.平台设备编号 = b.平台设备编号 where (where 账户=? and IMEI=? and （开始时间<=时间＜=结束时间 ）and 前分页信息条) order by 定位时间
+//用于需要关联字段的联表查询，先 join on 再where 再 order by 再limit
+select a.* from 定位信息表 a join 设备信息表 b on a.平台设备编号 = b.平台设备编号  where a.账户=? and b.IMEI=?  and （开始时间<=a.时间＜=结束时间 ）order by 定位时间 limit 0,10 ;
 ```
 
 #### 常用其他语句 for mysql
