@@ -51,3 +51,32 @@ alter table c add primary key(dcep_app_status)；
  //使用某个数据库
  use interface
 ```
+
+## PLSQL下载
+
+### 访问10.1.14.20window
+
+密码：威武霸气
+
+复制原本的安装文件夹
+
+### PLSQL的dll导入
+
+1. 进入配置界面
+![进入设置界面](/program/pictures/sql/1686572317725.png)
+2. 复制文件夹并修改配置
+![Alt text](/program/pictures/sql/1686572428684.png)
+
+### PLSQL注册
+
+> 进入界面---》help--->register
+
+14:
+Product Code：4t46t6vydkvsxekkvf3fjnpzy5wbuhphqz
+serial Number：601769
+password：xs374ca
+
+13:
+product code： 4vkjwhfeh3ufnqnmpr9brvcuyujrx3n3le
+serial Number：226959
+password: xs374ca
