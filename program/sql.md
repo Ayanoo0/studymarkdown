@@ -81,3 +81,23 @@ password：xs374ca
 product code： 4vkjwhfeh3ufnqnmpr9brvcuyujrx3n3le
 serial Number：226959
 password: xs374ca
+
+## sql语句书写逻辑
+
+- 基于题目对方法的思考
+- 题目：对于table表，存在id、name此两个字段，此两条字段不存在主键，请查询出id值最大的所有记录；
+
+```sql
+ x = select max(id) from table ;
+ select * from table where id = x;
+ ```
+
+- 处理逻辑：先查出最大的id，通过最大的id查到所有记录即可；
+- 推论：先查出限制的条件，在向外部查询；
+- else：对于null 无法通过 = 查出；
+
+## sql基础特性
+
+1. reasonSet：输出的结果集；
+2. functions：自定义的一些执行函数，可以类似于其他语言中的函数，对输出结果进行处理；
+3. 关键词：与其他语言类似，不可用于重新命名方法等，如“select”、“from”等sql基础占用的词语；
