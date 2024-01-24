@@ -67,7 +67,7 @@ npm config set registry https://registry.npm.taobao.org
 npm config get registry
 ```
 
-### 2.4. 配置nmp下载依赖的位置
+### 2.4. 配置npm下载依赖的位置
 
 - 查看nmp的prefix和cache的路径配置信息
 

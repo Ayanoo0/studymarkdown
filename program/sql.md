@@ -51,6 +51,17 @@ alter table c add primary key(dcep_app_status)；
  select concat(temp1.id ,"_"  ,temp2.id  ,"_" ,temp3.id)  from temp1,temp2,temp3;
  //使用某个数据库
  use interface
+ // 将表从一个库迁移到另一个库  
+ // blob格式不能用数据导入再导出的形式 
+ create table 
+smdp_dp_key_info (id int primary key)
+as select * from esim.euicc_smdp_dp_key_info;
+// 获取两个表相同的值进行比对
+select hex(certificate_value) from certificate where id = 47 
+union all
+select hex(certificate_value) from esim.certificate where id = 47 
+
+;
 ```
 
 ## PLSQL下载
